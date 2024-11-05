@@ -13,9 +13,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
+        
       - name: Diagnose credential issues
-        run: aws sts get-caller-identity
+        run: |
+          aws sts get-caller-identity
 
       - name: Configure AWS credentials using Assume Role
         uses: aws-actions/configure-aws-credentials@v2
