@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
 
 permissions:
-      id-token: write
-      contents: read  
+  id-token: write
+  contents: read  
 
 jobs:
   deploy:
@@ -17,6 +17,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Specify the Node.js version you need
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
 
       - name: Configure AWS credentials using Assume Role
         uses: aws-actions/configure-aws-credentials@v2
@@ -27,7 +38,7 @@ jobs:
 
       - name: Sync S3 bucket
         run: |
-          aws s3 sync . ${{ secrets.PORTFOLIO_BUCKET }} --delete
+          aws s3 sync ./dist ${{ secrets.PORTFOLIO_BUCKET }} --delete  # Ensure correct path to built files
 
       - name: Invalidate CloudFront cache
         run: |
