@@ -1,3 +1,35 @@
-- name: Diagnose AWS credential issues
-  run: |
-    aws sts get-caller-identity
+name: Deploy to S3 and Invalidate CloudFront with Assume Role
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Diagnose credential issues
+        run: aws sts get-caller-identity
+
+      - name: Configure AWS credentials using Assume Role
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: ${{ secrets.PORTFOLIO_AWS_ROLE_ARN }}
+          aws-region: us-west-2
+          role-session-name: johnbrennan.codes-trust-role
+
+      - name: Sync S3 bucket
+        run: |
+          aws s3 sync . ${{ secrets.PORTFOLIO_BUCKET }} --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.PORTFOLIO_CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
