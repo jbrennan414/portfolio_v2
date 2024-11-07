@@ -1,5 +1,14 @@
 const projects = [
     {
+        "name": "SkiBunks 🏔",
+        "description": "SkiBunks is a rental reservation system I built for my buddies and I, in our ski house during the winter of 2023/24",
+        "uses":["react", "dynamo", "lambda"],
+        "link":"https://skibunks.club/",
+        "github": "https://github.com/jbrennan414/ski-bunks",
+        "youtube":"https://www.youtube.com/watch?v=qRyWRSH-Dkk",
+        "under_construction": false
+    },
+    {
         "name": "WhereI'llBe ⛷",
         "description": "Share your ski calendar with your friends, to carpool or get drinks on the mountain!",
         "uses":["react","firebase", "redux"],
@@ -40,28 +49,6 @@ const projects = [
         "github":"https://github.com/jbrennan414/coronavirus",
         "under_construction": false
     },
-    // {
-    //     "name": "GitHub Jobs  💼",
-    //     "description":"This was a YouTube code-along, using a redis database and a node back-end.",
-    //     "uses":["react", "redis", "node"],
-    //     "link":"https://jobs.johnbrennan.codes",
-    //     "github":"https://github.com/jbrennan414/github_jobs",
-    //     "under_construction": true
-    // },
-    // {
-    //     "name":"Conference Callz  🖥",
-    //     "description": "Easter is next week and my uncles don't like Google Hangouts or Zoom...so I got to make an instance of Jitsi Meet!",
-    //     "uses":["jitsi", "ec2"],
-    //     "link": "https://conference.johnbrennan.codes",
-    //     "under_construction": true,
-    // },
-    // {
-    //     "name": "CountMeIn",
-    //     "description": "🏈 A clone of Meetup.com, for pickup sports!",
-    //     "uses": ["react", "redux"],
-    //     "link": "https://countmein.johnbrennan.codes",
-    //     "github": "https://github.com/jbrennan414/countMeIn",
-    // },
     {
         "name": "FindMyFourteener 🗻",
         "description": " Do you live in Denver and need to hike a 14'er? This is the site for you!",
@@ -86,20 +73,6 @@ const projects = [
         "github": "https://github.com/jbrennan414/weather-wardrobe",
         "under_construction": false
     },
-    // {
-    //     "name":"HeismanHangups",
-    //     "description": "🏆 Query Site for Heisman trophy winners. Need to know how many Heisman trophy winners were running backs AND Auburn grads? This is your site!",
-    //     "uses":["react"],
-    //     "link":"https://github.com/jbrennan414/heisman",
-    //     "github": "https://github.com/jbrennan414/heisman",
-    // },
-    // {
-    //     "name":"Chat-Example",
-    //     "description": "💬 Chat app to learn Socket.IO, verrrry basic",
-    //     "uses":["socketio"],
-    //     "link":"https://github.com/jbrennan414/chat-example",
-    //     "github": "https://github.com/jbrennan414/chat-example",
-    // }
 ];
 
 export default projects;
