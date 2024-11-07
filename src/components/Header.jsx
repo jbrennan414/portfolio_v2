@@ -9,7 +9,7 @@ export default function Header() {
   return (
         <div className="firstHeader">
             <div className="headerText">
-                <h1>Fart BRENNAN</h1>
+                <h1>JOHN BRENNAN</h1>
                 <h4>fullstack developer</h4>
             </div>
             <div id="icons">

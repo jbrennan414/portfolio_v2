@@ -26,7 +26,11 @@ export default function Projects() {
                 
                 {project.under_construction ? (
                         <h5 className={"ribbon"}>Under construction</h5>
-                    ): ""}
+                ): ""}
+
+                {project.retired ? (
+                        <h5 className={"ribbon"}>Retired</h5>
+                ): ""}
 
                 <h2>{project.name}</h2>
                 <h3>{project.description}</h3>
