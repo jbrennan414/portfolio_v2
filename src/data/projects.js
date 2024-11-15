@@ -25,29 +25,12 @@ const projects = [
         "under_construction": false
     },
     {
-        "name": "Coronavirus Tracker 🦠",
-        "description": "This is a first pass at a coronavirus tracker, using Wes Bos' code along on youtube. In the coming weeks I hope to add to this!",
-        "uses":["react"],
-        "link":"https://github.com/jbrennan414/coronavirus",
-        "github":"https://github.com/jbrennan414/coronavirus",
-        "under_construction": false,
-        "retired": true
-    },
-    {
         "name": "FindMyFourteener 🗻",
         "description": " Do you live in Denver and need to hike a 14'er? This is the site for you!",
         "uses":["react"],
         "link": "https://www.findmyfourteener.com/", 
         "github":"https://github.com/jbrennan414/findmyfourteener",
         "under_construction": true
-    },
-    {
-        "name": "WhereI'llBe ⛷",
-        "description": "Share your ski calendar with your friends, to carpool or get drinks on the mountain!",
-        "uses":["react","firebase", "redux"],
-        "link":"https://whereillbe.com/",
-        "github":"https://github.com/jbrennan414/where-ill-be",
-        "retired": true
     },
     {
         "name": "CurrenSee 💶",
