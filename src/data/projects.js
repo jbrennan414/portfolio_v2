@@ -28,9 +28,9 @@ const projects = [
         "name": "FindMyFourteener 🗻",
         "description": " Do you live in Denver and need to hike a 14'er? This is the site for you!",
         "uses":["react"],
-        "link": "https://www.findmyfourteener.com/", 
+        "link": "https://findmyfourteener.com/", 
         "github":"https://github.com/jbrennan414/findmyfourteener",
-        "under_construction": true
+        "under_construction": false
     },
     {
         "name": "CurrenSee 💶",
