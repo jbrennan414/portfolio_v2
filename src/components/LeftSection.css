@@ -1,0 +1,88 @@
+  @font-face {
+    font-family: "Montserrat";   /*Can be any text*/
+    src: local("Montserrat-Regular"),
+      url("./fonts/Montserrat-Regular.ttf") format("truetype");
+  }
+  
+  @font-face { 
+    font-family: "Roboto";
+    src: local("RobotoSlab-Regular"),
+      url("./fonts/RobotoSlab-Regular.ttf") format("truetype");
+  }
+  
+  @font-face { 
+    font-family: "OpenSans";
+    src: local("OpenSans-Regular"),
+      url("./fonts/OpenSans-Regular.ttf") format("truetype");
+  }
+  
+  @font-face { 
+    font-family: "Lato";
+    src: local("Lato-Regular"),
+      url("./fonts/Lato-Regular.ttf") format("truetype");
+  }
+  
+  .left-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+  }
+  
+  h1 {
+    font-size: 64px;
+    font-family: "Montserrat";
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-family: "Roboto";
+  }
+  
+  h5 {
+    font-size: 16px;
+    font-family: "OpenSans";
+  }
+  
+  h6 {
+    font-size: 14px;
+    font-family: "Lato";
+  }
+  
+  .contact-me {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  a {
+    padding: 10px;
+    color: white;
+  }
+  
+  .my-title {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: white;
+  }
+  
+  .date { 
+    white-space: nowrap;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #7D8D9D;
+    padding: 10px;
+  }
+  
+  .job-description {
+    color: #7D8D9D;
+    font-family: "Roboto";
+    font-size: 12px;
+  }

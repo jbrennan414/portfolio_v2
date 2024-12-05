@@ -13,11 +13,8 @@ export default function Header() {
                 <h4>fullstack developer</h4>
             </div>
             <div id="icons">
-                <a href={"https://github.com/jbrennan414"}><GitHubIcon /></a>
                 <a href={"https://twitter.com/jbrennan414"}><TwitterIcon /></a>
                 <br />
-                <a href={"https://www.linkedin.com/in/jbrennan414/"}><LinkedInIcon /></a>
-                <a href="mailto:brennanj414@gmail.com"><EmailIcon /></a>
             </div>
         </div>  
     )

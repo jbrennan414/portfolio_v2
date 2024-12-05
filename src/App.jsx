@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './components/Header'
-import ContentContainer from './components/ContentContainer'
+import RightSection from './components/RightSection'
+import LeftSection from './components/LeftSection'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Header />
-      <ContentContainer />
-    </>
+    <div className="App">
+      <LeftSection />
+      <RightSection />
+    </div>
   )
 }
 
