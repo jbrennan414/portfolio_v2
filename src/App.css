@@ -1,187 +1,108 @@
-/* DEFAULT STYLES */
-/* https://www.canva.com/learn/website-color-schemes/  #5*/
-html {
-  margin: 4em;
-}
-
 .App {
-  text-align: center;
+  height: 100vh;
+  margin: 0;
+  background: rgb(18,18,18);
+  background: linear-gradient(100deg, rgba(18,18,18,1) 78%, rgba(9,71,136,1) 91%, rgba(0,123,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 5%;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Montserrat";   /*Can be any text*/
+  src: local("Montserrat-Regular"),
+    url("./fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face { 
+  font-family: "Roboto";
+  src: local("RobotoSlab-Regular"),
+    url("./fonts/RobotoSlab-Regular.ttf") format("truetype");
+}
+
+@font-face { 
+  font-family: "OpenSans";
+  src: local("OpenSans-Regular"),
+    url("./fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face { 
+  font-family: "Lato";
+  src: local("Lato-Regular"),
+    url("./fonts/Lato-Regular.ttf") format("truetype");
+}
+
+.left-section {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 80%
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 64px;
+  font-family: "Montserrat";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  font-size: 24px;
+  font-family: "Roboto";
 }
 
-@media screen and (min-width: 500px) {
-  #icons {
-    position:absolute;
-  }
+h5 {
+  font-size: 16px;
+  font-family: "OpenSans";
 }
 
-.github:hover {
-  filter: brightness(0%);
+h6 {
+  font-size: 14px;
+  font-family: "Lato";
 }
 
-.youtube:hover {
-  filter: brightness(0%);
+.right-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  overflow-y: auto;
 }
 
-.youtube {
-  margin-right: 10px;
-}
-
-.icons a:hover {
-  border: 1px solid black;
-}
-
-/* HEADER */
-.header {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  color: gray;
-}
-
-.header:not(:first-child) { 
-  margin-top: 5em;
-}
-
-.githubLogo{
-  display:flex;
-  justify-content: flex-end;
-  color:gray
-}
-
-#githubLogo:hover{
-  color: white;
-}
-
-.firstHeader {
-  text-align: center;
-  display:flex;
-  align-items:center;
+.contact-me {
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: 'Raleway', sans-serif;
-  color: gray;
 }
 
-#icons {
-  right: 4em;
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 a {
-  text-decoration: none;
-  color: inherit
+  padding: 10px;
+  color: white;
 }
 
-.bio{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap:wrap;
-  align-items: center;
+.my-title {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: white;
 }
 
-.bio p {
-  margin-left: 2em;
-  color: gray;
-  font-family: 'Raleway', sans-serif;
+.date { 
+  white-space: nowrap;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #7D8D9D;
+  padding: 10px;
 }
 
-.projectCard {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-radius:10px;
-  width: 400px;
-  margin: 10px;
-  padding: 1em;
-  box-shadow: #61dafb;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-}
-
-.projectsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.contactIcons {
-  float: right;
-}
-
-.dependencies-used {
-  margin:0 1em;
-  overflow: hidden;
-  flex-shrink: 3;
-  justify-content: center;
-}
-
-.ribbon {
-  margin: 0;
-  padding: 0;
-  background: rgb(223, 17, 17);
-  color:white;
-  padding:1em 0;
-  /* position: absolute; */
-  top:0;
-  right:0;
-  transform: translateX(57%) translateY(-261%) rotate(45deg);
-  transform-origin: top left;
-}
-.ribbon:before,
-.ribbon:after {
-  content: '';
-  position: absolute;
-  top:0;
-  margin: 0 -1px; /* tweak */
-  width: 100%;
-  height: 100%;
-  background: rgb(223, 17, 17);
-}
-.ribbon:before {
-  right:100%;
-}
-
-.ribbon:after {
-  left:100%;
-}
-
-.how-to-find {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.resources-utilized {
-  display: flex;
-  justify-content: center;
-  flex-shrink: 3;
+.job-description {
+  color: #7D8D9D;
+  font-family: "Roboto";
+  font-size: 12px;
 }
