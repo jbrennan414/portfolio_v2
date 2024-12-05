@@ -1,10 +1,24 @@
 .side-projects { 
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     margin: 20px;
+}
+
+.side-projects:hover {
+    border: .5px solid white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 img {
     width: 128px;
-    height: 72px
+    height: 72px;
+    padding: 0 20px 0 0;
+}
+
+.job-title {
+    margin: 0px;
+    font-family: "Roboto";
+    font-size: 14px;
 }
