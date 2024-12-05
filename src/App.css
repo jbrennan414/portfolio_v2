@@ -6,8 +6,8 @@
   display: flex;
   justify-content: center;
   color: white;
-  padding: 5%;
   font-family: Arial, sans-serif;
+  padding: 5% 20vh 5% 20vh;
 }
 
 @font-face {
@@ -75,14 +75,6 @@ a {
   font-family: "Roboto";
   font-size: 14px;
   color: white;
-}
-
-.date { 
-  white-space: nowrap;
-  font-family: "Roboto";
-  font-size: 14px;
-  color: #7D8D9D;
-  padding: 10px;
 }
 
 .job-description {

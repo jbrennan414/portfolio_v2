@@ -73,13 +73,7 @@
     color: white;
   }
   
-  .date { 
-    white-space: nowrap;
-    font-family: "Roboto";
-    font-size: 14px;
-    color: #7D8D9D;
-    padding: 10px;
-  }
+
   
   .job-description {
     color: #7D8D9D;
