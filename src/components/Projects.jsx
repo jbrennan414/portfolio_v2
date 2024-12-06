@@ -34,7 +34,7 @@ function Projects() {
             title: "CurrenSee 💰",
             description: "CurrenSee is an iOS currency exchange rate app I built in 2018",
             link: "https://www.youtube.com/watch?v=y9hC8f9dm_U"
-        }.
+        },
         {
             id: "findmyfourteener",
             title: "FindMyFourteener 🏔️",
