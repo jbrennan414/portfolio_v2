@@ -13,9 +13,9 @@ function LeftSection() {
           <h5>Crafting innovative software solutions with a hacker's edge, 
               driven by passion for growth, creativity, 
               and excellence in development.</h5>
-          <h6>ABOUT</h6>
+          {/* <h6>ABOUT</h6>
           <h6>EXPERIENCE</h6>
-          <h6>PROJECTS</h6>
+          <h6>PROJECTS</h6> */}
         </div>
         <div className="contact-me">
           <a href={"https://github.com/jbrennan414"}><GitHubIcon color="white" /></a>
