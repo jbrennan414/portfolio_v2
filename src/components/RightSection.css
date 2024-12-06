@@ -4,6 +4,7 @@
     flex-direction: column;
     padding: 0 0 10% 0;
     overflow-y: auto;
+<<<<<<< Updated upstream
   }
 
   .date { 
@@ -14,3 +15,11 @@
     padding: 10px;
     width: 200px;
   }
+=======
+    scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, and Safari */
+}
+>>>>>>> Stashed changes

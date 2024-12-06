@@ -30,13 +30,11 @@ function Projects() {
             link: "https://www.youtube.com/watch?v=4CnmTISvu3A"
         }, 
         {
-            id: "wildrydes",
-            title: "WildRydes 🦄",
-            description: `This was an AWS tutorial to learn the basics of a full stack app on AWS. 
-            If you need to book a unicorn reservation, this is the app for you.`,
-            image: wildRydesLogo,
-            link:"https://master.d3su1632stz2i2.amplifyapp.com/"
-        },
+            id: "currensee",
+            title: "CurrenSee 💰",
+            description: "CurrenSee is an iOS currency exchange rate app I built in 2018",
+            link: "https://www.youtube.com/watch?v=y9hC8f9dm_U"
+        }.
         {
             id: "findmyfourteener",
             title: "FindMyFourteener 🏔️",
