@@ -3,6 +3,7 @@ import skiBunksLogo from '../assets/img/ski-bunks.jpg';
 import skiScraperLogo from '../assets/img/skiscraper.jpg';
 import wildRydesLogo from '../assets/img/wildrydes.png';
 import findMyFourteenerLogo from '../assets/img/findmyfourteener.png';
+import currenseeLogo from "../assets/img/currensee.svg"
 
 
 function Projects() {
@@ -33,7 +34,8 @@ function Projects() {
             id: "currensee",
             title: "CurrenSee 💰",
             description: "CurrenSee is an iOS currency exchange rate app I built in 2018",
-            link: "https://www.youtube.com/watch?v=y9hC8f9dm_U"
+            link: "https://www.youtube.com/watch?v=y9hC8f9dm_U",
+            image: currenseeLogo
         },
         {
             id: "findmyfourteener",
