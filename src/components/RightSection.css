@@ -4,7 +4,25 @@
     flex-direction: column;
     padding: 0 0 10% 0;
     overflow-y: auto;
+    overflow-x: auto;
     scrollbar-width: none; /* Firefox */
+    min-height: 0; /* Allow flex shrinking */
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 900px) {
+    .right-section {
+        width: 100%;
+        padding: 20px 0;
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .right-section {
+        padding: 15px 0;
+    }
 }
 
 body::-webkit-scrollbar {

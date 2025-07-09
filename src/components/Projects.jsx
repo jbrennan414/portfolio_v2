@@ -47,18 +47,18 @@ function Projects() {
     ]
 
     return (
-        <div>
+        <div className="projects-container">
             {projects.map((project, i) => (
-                <div key={i} className="side-projects" onClick={() => handleClick(project)} >
-                    <img src={project.image} />
-                    <div>
+                <div key={i} className="side-projects" onClick={() => handleClick(project)} role="button" tabIndex={0}>
+                    <img src={project.image} alt={project.title} />
+                    <div className="project-content">
                         <p className="job-title">{project.title}</p>
                         <p className="job-description">{project.description}</p>
                     </div>
                 </div>
             ))}
         </div>
-  )
+    )
 }
 
 export default Projects;
