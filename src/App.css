@@ -235,7 +235,7 @@ h1.name .grad {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .hero-card img {
   position: absolute;
@@ -243,6 +243,7 @@ h1.name .grad {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 20%;
   opacity: 0.85;
 }
 .hero-card::after {
@@ -250,17 +251,6 @@ h1.name .grad {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, transparent 50%, rgba(11, 10, 20, 0.95));
-}
-.hero-card-meta {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--display);
-  font-size: 11px;
-  color: var(--muted);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 .hero-card-caption {
   position: relative;
@@ -271,35 +261,6 @@ h1.name .grad {
   line-height: 1.4;
 }
 .hero-card-caption span { color: var(--c); }
-
-/* STATS */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  padding: 24px;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  margin-bottom: 96px;
-  backdrop-filter: blur(16px);
-}
-@media (max-width: 720px) {
-  .stats { grid-template-columns: repeat(2, 1fr); }
-}
-.stat .n {
-  font-family: var(--display);
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  background: linear-gradient(135deg, var(--v), var(--c));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 1;
-  margin-bottom: 6px;
-}
-.stat .l { font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
 
 /* SECTIONS */
 section { margin-bottom: 96px; }

@@ -3,6 +3,18 @@ import experience from './data/experience'
 import projects from './data/projects'
 import johnPhoto from './assets/img/John_Brennan.jpg'
 
+const CAREER_START = new Date('2018-08-01')
+
+function yearsSince(start) {
+  const now = new Date()
+  let years = now.getFullYear() - start.getFullYear()
+  const beforeAnniversary =
+    now.getMonth() < start.getMonth() ||
+    (now.getMonth() === start.getMonth() && now.getDate() < start.getDate())
+  if (beforeAnniversary) years--
+  return years
+}
+
 function GitHubIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor">
@@ -63,6 +75,7 @@ function ProjectImage({ project }) {
 }
 
 function App() {
+  const years = yearsSince(CAREER_START)
   return (
     <>
       <div className="blob blob-v" />
@@ -76,7 +89,6 @@ function App() {
             jbrennan
           </div>
           <div className="nav-links">
-            <a href="#about">about</a>
             <a href="#work">work</a>
             <a href="#projects">projects</a>
             <a href="#contact">contact</a>
@@ -91,10 +103,10 @@ function App() {
             <h1 className="name">
               Senior engineer.
               <br />
-              <span className="grad">Reliability obsessed.</span>
+              <span className="grad">Systems that stay up.</span>
             </h1>
             <p className="tagline">
-              I'm John — a senior software engineer with 8 years shipping production systems across VoIP,
+              I'm John — a senior software engineer with {years} years shipping production systems across VoIP,
               fintech, and communications. I build at the seams: APIs, observability, and anywhere reliability
               meets product.
             </p>
@@ -109,10 +121,6 @@ function App() {
           </div>
           <div className="hero-card">
             <img src={johnPhoto} alt="John Brennan" />
-            <div className="hero-card-meta">
-              <span>est. Denver</span>
-              <span>v4.7</span>
-            </div>
             <div className="hero-card-caption">
               Senior Software Engineer
               <br />
@@ -120,13 +128,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        <div className="stats" id="about">
-          <div className="stat"><div className="n">8</div><div className="l">YEARS SHIPPING</div></div>
-          <div className="stat"><div className="n">100k</div><div className="l">VOIP DEVICES SUPPORTED</div></div>
-          <div className="stat"><div className="n">99.99%</div><div className="l">PLATFORM UPTIME</div></div>
-          <div className="stat"><div className="n">30%</div><div className="l">STORAGE COSTS CUT</div></div>
-        </div>
 
         <section id="work">
           <div className="section-head">
